@@ -26,9 +26,9 @@ app = FastAPI(
 )
 
 # Africa's Talking configuration
-AFRICAS_TALKING_USERNAME = os.getenv("AFRICAS_TALKING_USERNAME")
-AFRICAS_TALKING_API_KEY = os.getenv("AFRICAS_TALKING_API_KEY")
-AFRICAS_TALKING_SENDER_ID = os.getenv("AFRICAS_TALKING_SENDER_ID", "KASA")
+AFRICAS_TALKING_USERNAME = os.getenv("AT_USERNAME")
+AFRICAS_TALKING_API_KEY = os.getenv("AT_API_KEY")
+AFRICAS_TALKING_SENDER_ID = os.getenv("AT_SENDER_ID", "KASA")
 
 # Debug: Log the credentials (mask the API key)
 logger.info(f"Loading credentials - Username: {AFRICAS_TALKING_USERNAME}")
